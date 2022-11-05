@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/6ceddcce93.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+	</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+			  <a href="#" class="brand-logo left"><img class="logo" src="%sveltekit.assets%/logo.png" alt="SÓ MUSIC"></a>
+			  <ul class="nav-itens right">
+				<li><a href="/"><i class="material-icons">home</i></a></li>
+				<li><a href=""><i class="material-icons">person</i></a></li>
+			  </ul>
+			</div>
+		  </nav>
+
+		<div>%sveltekit.body%</div>
+
+		<style>
+			body {
+        		background-image: url(wall2.jpg);
+        		background-repeat: no-repeat;
+        		background-size: cover;
+        		min-height: 125vh;
+    		}
+
+			nav {
+				background-color: rgba(65, 50, 50, 0.55);
+			}
+
+			img {
+				height: 250px;
+			}
+
+			.right {
+				margin-right: 30%;
+			}
+
+			.left {
+  				margin-left: 30%;
+			}
+
+			.logo {
+				height: 240px;
+				width: 200px;
+				margin-top: -48%;
+			}
+		</style>
+	</body>
+</html>
+<script>
+	$(document).ready(function(){
+   $('.slider').slider();
+   });
+ </script>
+ <script>
+   document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.scrollspy');
+   var instances = M.ScrollSpy.init(elems, options);
+ });
+   $(document).ready(function(){
+   $('.scrollspy').scrollSpy();
+ });
+ </script>
